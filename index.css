@@ -9,20 +9,36 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
-
-.context {
-    width: 100%;
+.context{
+    width: 51%;
     position: absolute;
-    top:50vh;
+    left: 25%;
+    top:30vh;
     
 }
 
-.context h1{
-    text-align: center;
+.resume{
+    color: black;
+}
+
+h1{
+    text-align: left;
     color: #fff;
     font-size: 50px;
 }
 
+h2{
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+}
+
+.links{
+    text-align: left;
+    color: #fff;
+    font-size: 10px;
+    /* margin-right: 250px; */
+}
 
 .area{
     background: #4e54c8;  
