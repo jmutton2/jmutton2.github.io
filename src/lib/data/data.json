@@ -1,0 +1,82 @@
+{
+	"igniter_tickets": {
+		"job_title": "Igniter Tickets",
+		"job_description": "Igniter Tickets is...",
+		"job_timeline": "June 2023 - present",
+		"job_team_size": "1 - 10",
+		"job_role": "Software Engineer",
+		"languages": ["ruby", "rails", "typescript", "html", "css", "svelte", "react"]
+	},
+	"highmark": {
+		"job_title": "Highmark Interactive",
+		"job_description": "Highmark Interactive is...",
+		"job_timeline": "Nov 2022 - Apr 2023",
+		"job_team_size": "1 - 10",
+		"job_role": "DevOps Specialist",
+		"languages": ["php", "laravel", "aws"]
+	},
+	"nca": {
+		"job_title": "National Center for Audiology",
+		"job_description": "National Center for Audiology is...",
+		"job_timeline": "May 2022 – Sept 2022",
+		"job_team_size": "1 - 10",
+		"job_role": "Junior Software engineer",
+		"languages": ["rust", "typescript", "vue", "html", "css", "tailwindcss"]
+	},
+	"tooke": {
+		"job_title": "Tooke Contruction",
+		"job_description": "General Laborer",
+		"job_timeline": "2023 - present",
+		"job_team_size": "1 - 10",
+		"job_role": "software engineer",
+		"languages": []
+	},
+	"imgit": {
+		"project_title": "Imgit",
+		"project_description": "General Laborer",
+		"project_timeline": "2023 - present",
+		"project_team_size": "1 - 10",
+		"project_role": "software engineer",
+		"languages": ["python", "svelte", "html", "css", "tailwindcss", "sqlite"]
+	},
+	"glov": {
+		"project_title": "Glov",
+		"project_description": "General Laborer",
+		"project_timeline": "2023 - present",
+		"project_team_size": "1 - 10",
+		"project_role": "software engineer",
+		"languages": []
+	},
+	"pisec": {
+		"project_title": "PiSec",
+		"project_description": "General Laborer",
+		"project_timeline": "2023 - present",
+		"project_team_size": "1 - 10",
+		"project_role": "software engineer",
+		"languages": ["c"]
+	},
+	"anidex": {
+		"project_title": "Anidex",
+		"project_description": "General Laborer",
+		"project_timeline": "2023 - present",
+		"project_team_size": "1 - 10",
+		"project_role": "software engineer",
+		"languages": ["python"]
+	},
+	"nvim_gol": {
+		"project_title": "Nvim Game of Life",
+		"project_description": "General Laborer",
+		"project_timeline": "2023 - present",
+		"project_team_size": "1 - 10",
+		"project_role": "software engineer",
+		"languages": ["go", "lua"]
+	},
+	"scribe": {
+		"project_title": "Scribe",
+		"project_description": "General Laborer",
+		"project_timeline": "2023 - present",
+		"project_team_size": "1 - 10",
+		"project_role": "software engineer",
+		"languages": ["lua"]
+	}
+}
