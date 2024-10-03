@@ -1,11 +1,12 @@
 {
 	"igniter_tickets": {
 		"job_title": "Igniter Tickets",
-		"job_description": "Igniter Tickets is...",
+		"job_description": "Igniter tickets is white-labelled ticketing company - providing ticketing services for hundreds of clients across north america.",
 		"job_timeline": "June 2023 - present",
 		"job_team_size": "1 - 10",
 		"job_role": "Software Engineer",
-		"languages": ["ruby", "rails", "typescript", "html", "css", "svelte", "react"]
+		"languages": ["ruby", "rails", "typescript", "html", "css", "svelte", "react"],
+		"resource": ""
 	},
 	"highmark": {
 		"job_title": "Highmark Interactive",
@@ -13,7 +14,8 @@
 		"job_timeline": "Nov 2022 - Apr 2023",
 		"job_team_size": "1 - 10",
 		"job_role": "DevOps Specialist",
-		"languages": ["php", "laravel", "aws"]
+		"languages": ["php", "laravel", "aws"],
+		"resource": ""
 	},
 	"nca": {
 		"job_title": "National Center for Audiology",
@@ -21,7 +23,8 @@
 		"job_timeline": "May 2022 – Sept 2022",
 		"job_team_size": "1 - 10",
 		"job_role": "Junior Software engineer",
-		"languages": ["rust", "typescript", "vue", "html", "css", "tailwindcss"]
+		"languages": ["rust", "typescript", "vue", "html", "css", "tailwindcss"],
+		"resource": "nca"
 	},
 	"tooke": {
 		"job_title": "Tooke Contruction",
@@ -29,7 +32,8 @@
 		"job_timeline": "2023 - present",
 		"job_team_size": "1 - 10",
 		"job_role": "software engineer",
-		"languages": []
+		"languages": [],
+		"resource": ""
 	},
 	"imgit": {
 		"project_title": "Imgit",
@@ -37,7 +41,8 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": ["python", "svelte", "html", "css", "tailwindcss", "sqlite"]
+		"languages": ["python", "svelte", "html", "css", "tailwindcss", "sqlite"],
+		"resource": ""
 	},
 	"glov": {
 		"project_title": "Glov",
@@ -45,7 +50,8 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": []
+		"languages": [],
+		"resource": ""
 	},
 	"pisec": {
 		"project_title": "PiSec",
@@ -53,7 +59,8 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": ["c"]
+		"languages": ["c"],
+		"resource": ""
 	},
 	"anidex": {
 		"project_title": "Anidex",
@@ -61,7 +68,8 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": ["python"]
+		"languages": ["python"],
+		"resource": ""
 	},
 	"nvim_gol": {
 		"project_title": "Nvim Game of Life",
@@ -69,7 +77,8 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": ["go", "lua"]
+		"languages": ["go", "lua"],
+		"resource": "nvim_gol"
 	},
 	"scribe": {
 		"project_title": "Scribe",
@@ -77,6 +86,7 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": ["lua"]
+		"languages": ["lua"],
+		"resource": "scribe"
 	}
 }

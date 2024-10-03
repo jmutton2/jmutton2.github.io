@@ -3,73 +3,80 @@
 
   import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
   export let next_page: string = '';
+  export let projects = [];
 </script>
 
 <div class="content">
-  <section class="py-28 px-5">
-    <AnimatedPreview delay_offset={0}>
-      <h1 class="font-extrabold text-7xl leading-[4.5rem]">
-        <slot name="project_title"></slot>
-      </h1>
-    </AnimatedPreview>
-  </section>
+  {#each projects as project}
+    <section class="py-28 px-5">
+      <AnimatedPreview delay_offset={0}>
+        <h1 class="font-extrabold text-7xl leading-[4.5rem]">
+          {project.project_title}
+        </h1>
+      </AnimatedPreview>
+    </section>
 
-  <section class="py-28 px-5 w-4/5 mx-auto">
-    <AnimatedPreview
-      delay_offset={9}
-      classes="justify-around w-full"
-      inner_classes="flex justify-between"
-    >
-      <div>
-        <p class="mt-4 text-black-200 mx-auto">Timeline</p>
-        <p class="mt-4 text-black-200 mx-auto">
-          <slot name="project_timeline"></slot>
-        </p>
-      </div>
-      <div>
-        <p class="mt-4 text-black-200 mx-auto">Team Size</p>
-        <p class="mt-4 text-black-200 mx-auto">
-          <slot name="project_team_size"></slot>
-        </p>
-        <p></p>
-      </div>
-      <div>
-        <p class="mt-4 text-black-200 mx-auto">Role</p>
-        <p class="mt-4 text-black-200 mx-auto">
-          <slot name="project_role"></slot>
-        </p>
-      </div>
-    </AnimatedPreview>
-  </section>
-
-  <section class="py-14 px-5">
-    <AnimatedPreview delay_offset={10}>
-      <h2 class="font-extrabold text-5xl leading-[4.5rem]">Work</h2>
-    </AnimatedPreview>
-  </section>
-
-  <section class="py-28 px-5">
-    <AnimatedPreview delay_offset={11}>
-      <a class="tile" href="/work/igniter">
-        <div class="text-right flex flex-col">
-          <span>Igniter Tickets</span>
-          <span>Software Engineer</span>
+    <section class="py-28 px-5 w-4/5 mx-auto">
+      <AnimatedPreview
+        delay_offset={9}
+        classes="justify-around w-full"
+        inner_classes="flex justify-between"
+      >
+        <div>
+          <p class="mt-4 text-black-200 mx-auto">Timeline</p>
+          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
+            {project.project_timeline}
+          </p>
         </div>
-        <div class="mt-11">
-          <img src={temp} alt="temp" />
+        <div>
+          <p class="mt-4 text-black-200 mx-auto">Team Size</p>
+          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
+            {project.project_team_size}
+          </p>
+          <p></p>
         </div>
-      </a>
-    </AnimatedPreview>
-  </section>
+        <div>
+          <p class="mt-4 text-black-200 mx-auto">Role</p>
+          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
+            {project.project_role}
+          </p>
+        </div>
+      </AnimatedPreview>
+    </section>
 
-  <section class="py-28 px-5">
-    <AnimatedPreview delay_offset={9}>
-      <h1 class="font-extrabold text-kxl leading-[4.5rem]">Overview</h1>
-      <p class="mt-4 text-black-200 mx-auto">
-        <slot name="project_description"></slot>
-      </p>
-    </AnimatedPreview>
-  </section>
+    <section class="py-28 px-5">
+      <AnimatedPreview delay_offset={9}>
+        <h1 class="font-extrabold text-kxl leading-[4.5rem]">Overview</h1>
+        <p class="mt-4 text-black-200 mx-auto">
+          {project.project_description}
+        </p>
+      </AnimatedPreview>
+    </section>
+
+    <section class="py-28 px-5">
+      <AnimatedPreview delay_offset={11}>
+        {#if project.resource != ''}
+          {#await import(`$lib/images/${project.resource}/demo.gif`) then { default: src }}
+            <img class="w-full" {src} alt="Demo Gif" />
+          {/await}
+        {:else}
+          <img class="w-full" src={temp} alt="Temp" />
+        {/if}
+      </AnimatedPreview>
+    </section>
+
+    <section class="py-14 px-5">
+      <AnimatedPreview delay_offset={11}>
+        <div class="flex gap-8 justify-between">
+          {#each project.languages as language}
+            {#await import(`$lib/images/${language}.png`) then { default: src }}
+              <img class="max-w-16 max-h-16" {src} alt={language} />
+            {/await}
+          {/each}
+        </div>
+      </AnimatedPreview>
+    </section>
+  {/each}
 
   <section class="py-14 px-5">
     <AnimatedPreview delay_offset={13}>

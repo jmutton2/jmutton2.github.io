@@ -2,6 +2,8 @@
   import temp from '$lib/images/temp.png';
 
   import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
+
+  import Ticket from '$lib/images/ticket.svg.svelte';
 </script>
 
 <div class="content">
@@ -18,7 +20,7 @@
   <section class="w-1/2 mx-auto pb-28 px-5">
     <AnimatedPreview delay_offset={9}>
       <p class="mt-4 text-black-200 mx-auto">
-        I am a Software Engineer who graduated in 2023, and is now working full
+        I am a Software Engineer who graduated in 2023, and am now working full
         time in my field. I take pride in my work and strive to become a well
         rounded and competent engineer.
       </p>
@@ -37,7 +39,7 @@
         <a class="tile" href="/work/igniter">
           <div class="text-right flex flex-col">
             <span>Igniter Tickets</span>
-            <span>Software Engineer</span>
+            <span class="text-xl">Software Engineer</span>
           </div>
           <div class="mt-11">
             <img src={temp} alt="temp" />
@@ -46,7 +48,7 @@
         <a class="tile" href="/work/highmark">
           <div class="text-right flex flex-col">
             <span>Highmark Interactive</span>
-            <span>DevOps Specialist</span>
+            <span class="text-xl">DevOps Specialist</span>
           </div>
           <div class="mt-11">
             <img src={temp} alt="temp" />
@@ -58,7 +60,7 @@
         <a class="tile" href="/work/nca">
           <div class="text-right flex flex-col">
             <span>National Center for Audiology</span>
-            <span>Junior Software Engineer</span>
+            <span class="text-xl">Junior Software Engineer</span>
           </div>
           <div class="mt-11">
             <img src={temp} alt="temp" />
@@ -67,7 +69,9 @@
         <a class="tile" href="/work/other">
           <div class="text-right flex flex-col">
             <span>Other</span>
-            <span>Various work in construction, retail, and food service.</span>
+            <span class="text-xl"
+              >Various work in construction, retail, and food service.</span
+            >
           </div>
           <div class="mt-11">
             <img src={temp} alt="temp" />
@@ -86,7 +90,7 @@
       <div class="grid grid-cols-[2fr_1fr] grid-rows-[1fr] gap-x-[50px] mb-16">
         <a class="tile" href="/projects/imgit">
           <div class="text-right flex flex-col">
-            <span>Imgit</span>
+            <span class="text-xl">Imgit</span>
             <span>A mass website monitoring tool.</span>
           </div>
           <div class="mt-11">
@@ -95,7 +99,7 @@
         </a>
         <a class="tile" href="/projects/glov">
           <div class="text-right flex flex-col">
-            <span>Glov</span>
+            <span class="text-xl">Glov</span>
             <span>A keyboard glove that is actually good.</span>
           </div>
           <div class="mt-11">
@@ -107,7 +111,7 @@
       <div class="grid grid-cols-[1fr_2fr] grid-rows-[1fr] gap-x-[50px] mb-16">
         <a class="tile" href="/projects/pi-sec">
           <div class="text-right flex flex-col">
-            <span>Pi-Sec</span>
+            <span class="text-xl">Pi-Sec</span>
             <span>A modular home security system.</span>
           </div>
           <div class="mt-11">
@@ -116,7 +120,7 @@
         </a>
         <a class="tile" href="/projects/anidex">
           <div class="text-right flex flex-col">
-            <span>Anidex</span>
+            <span class="text-xl">Anidex</span>
             <span>I love pokemon, and I wanted the pokedex in real life...</span
             >
           </div>
@@ -128,7 +132,7 @@
 
       <a class="tile" href="/projects/neovim">
         <div class="text-right flex flex-col">
-          <span>Neovim</span>
+          <span class="text-xl">Neovim</span>
           <span
             >A collection of plugins and small programs with a focus on Neovim.</span
           >
