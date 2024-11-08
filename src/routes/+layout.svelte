@@ -59,20 +59,8 @@
 
 <div class="app">
   <main class="pt-8">
-    <AnimatedPreview delay_offset={15}>
-      <div class="w-full flex justify-center">
-        <button class="pre" on:click={() => (showModal = true)}>"/"</button>
-      </div>
-    </AnimatedPreview>
-
     <slot></slot>
   </main>
-
-  <footer>
-    <p>[0] 0:portfolio*</p>
-    <p>Contact</p>
-    <p>"Jacob" {formattedDate}</p>
-  </footer>
 </div>
 
 <Modal bind:showModal>
@@ -88,18 +76,5 @@
 
   main {
     min-height: 100vh;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    background: #90a959;
-    padding: 1px 5px;
-  }
-
-  footer a {
-    font-weight: bold;
   }
 </style>

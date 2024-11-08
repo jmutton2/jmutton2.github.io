@@ -3,6 +3,9 @@
   import WorkPage from '$lib/components/workPage.svelte';
 </script>
 
-<WorkPage next_page="/projects/imgit" works={[data.tooke]}>
-  <span slot="next_page">Imgit</span>
+<WorkPage
+  next_page="/projects/anidex"
+  works={[data.construction, data.superstore, data.dairy_queen]}
+>
+  <span slot="next_page">Anidex</span>
 </WorkPage>

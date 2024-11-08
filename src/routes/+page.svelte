@@ -35,38 +35,44 @@
 
   <section class="pb-28 px-5">
     <AnimatedPreview delay_offset={11}>
-      <div class="grid grid-cols-[2fr_1fr] grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile" href="/work/igniter">
+      <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
+        <a class="left tile" href="/work/igniter">
           <div class="text-right flex flex-col">
             <span>Igniter Tickets</span>
             <span class="text-xl">Software Engineer</span>
           </div>
           <div class="mt-11">
-            <img src={temp} alt="temp" />
+            {#await import(`$lib/images/igniter/demo.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Igniter Tickets" />
+            {/await}
           </div>
         </a>
-        <a class="tile" href="/work/highmark">
+        <a class="right tile" href="/work/highmark">
           <div class="text-right flex flex-col">
             <span>Highmark Interactive</span>
             <span class="text-xl">DevOps Specialist</span>
           </div>
           <div class="mt-11">
-            <img src={temp} alt="temp" />
+            {#await import(`$lib/images/highmark/demo.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Igniter Tickets" />
+            {/await}
           </div>
         </a>
       </div>
 
-      <div class="grid grid-cols-[1fr_2fr] grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile" href="/work/nca">
+      <div class="grid expanding-grid-left grid-rows-[1fr] gap-x-[50px] mb-16">
+        <a class="left tile" href="/work/nca">
           <div class="text-right flex flex-col">
             <span>National Center for Audiology</span>
             <span class="text-xl">Junior Software Engineer</span>
           </div>
           <div class="mt-11">
-            <img src={temp} alt="temp" />
+            {#await import(`$lib/images/nca/demo.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Igniter Tickets" />
+            {/await}
           </div>
         </a>
-        <a class="tile" href="/work/other">
+        <a class="right tile" href="/work/other">
           <div class="text-right flex flex-col">
             <span>Other</span>
             <span class="text-xl"
@@ -74,7 +80,9 @@
             >
           </div>
           <div class="mt-11">
-            <img src={temp} alt="temp" />
+            {#await import(`$lib/images/construction/demo.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Igniter Tickets" />
+            {/await}
           </div>
         </a>
       </div>
@@ -87,42 +95,21 @@
     </AnimatedPreview>
 
     <AnimatedPreview delay_offset={13}>
-      <div class="grid grid-cols-[2fr_1fr] grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile" href="/projects/imgit">
-          <div class="text-right flex flex-col">
-            <span class="text-xl">Imgit</span>
-            <span>A mass website monitoring tool.</span>
-          </div>
-          <div class="mt-11">
-            <img src={temp} alt="temp" />
-          </div>
-        </a>
-        <a class="tile" href="/projects/glov">
-          <div class="text-right flex flex-col">
-            <span class="text-xl">Glov</span>
-            <span>A keyboard glove that is actually good.</span>
-          </div>
-          <div class="mt-11">
-            <img src={temp} alt="temp" />
-          </div>
-        </a>
-      </div>
-
       <div class="grid grid-cols-[1fr_2fr] grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile" href="/projects/pi-sec">
-          <div class="text-right flex flex-col">
-            <span class="text-xl">Pi-Sec</span>
-            <span>A modular home security system.</span>
-          </div>
-          <div class="mt-11">
-            <img src={temp} alt="temp" />
-          </div>
-        </a>
         <a class="tile" href="/projects/anidex">
           <div class="text-right flex flex-col">
             <span class="text-xl">Anidex</span>
             <span>I love pokemon, and I wanted the pokedex in real life...</span
             >
+          </div>
+          <div class="mt-11">
+            <img src={temp} alt="temp" />
+          </div>
+        </a>
+        <a class="tile" href="/projects/pi-sec">
+          <div class="text-right flex flex-col">
+            <span class="text-xl">Pi-Sec</span>
+            <span>A modular home security system.</span>
           </div>
           <div class="mt-11">
             <img src={temp} alt="temp" />
@@ -174,10 +161,6 @@
     transform: translate3d(0, -3px, 0);
   }
 
-  img {
-    max-width: initial;
-  }
-
   span,
   div,
   p {
@@ -185,5 +168,25 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .expanding-grid-left {
+    grid-template-columns: var(--left, 1fr) var(--right, 2fr);
+    transition: ease 400ms;
+  }
+
+  .expanding-grid-left:has(.left:hover) {
+    --left: 2fr;
+    --right: 1fr;
+  }
+
+  .expanding-grid-right {
+    grid-template-columns: var(--left, 2fr) var(--right, 1fr);
+    transition: ease 400ms;
+  }
+
+  .expanding-grid-right:has(.right:hover) {
+    --left: 1fr;
+    --right: 2fr;
   }
 </style>

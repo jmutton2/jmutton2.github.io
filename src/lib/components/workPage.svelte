@@ -50,6 +50,22 @@
         <p class="mt-4 text-black-200 mx-auto">
           {work.job_description}
         </p>
+
+        <br />
+        <br />
+
+        <h1 class="font-extrabold text-kxl leading-[4.5rem]">
+          Responsibilities
+        </h1>
+
+        <br />
+
+        <ol class="pl-14 list-decimal">
+          {#each work.job_tasks as task}
+            <li>{task}</li>
+            <br />
+          {/each}
+        </ol>
       </AnimatedPreview>
     </section>
 
@@ -57,7 +73,7 @@
       <AnimatedPreview delay_offset={11}>
         {#if work.resource != ''}
           {#await import(`$lib/images/${work.resource}/demo.png`) then { default: src }}
-            <img class="w-full" {src} alt="Demo Image" />
+            <img class="w-full" {src} />
           {/await}
         {:else}
           <img class="w-full" src={temp} alt="Temp" />

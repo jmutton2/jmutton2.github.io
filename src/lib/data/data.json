@@ -2,38 +2,82 @@
 	"igniter_tickets": {
 		"job_title": "Igniter Tickets",
 		"job_description": "Igniter tickets is white-labelled ticketing company - providing ticketing services for hundreds of clients across north america.",
+		"job_tasks": [
+			"Integrated Stripe as a payment provider to process thousands of transactions.",
+			"Initiated a visual overhaul to Igniter's Core application, which provided an improved client/customer experience.",
+			"Co-Developed a new web scanner system to provide realtime ticket management.",
+			"Participate in on-call support to assist clients with urgent and critical support requests.",
+			"Developed numerous tools/utilities to improve a plethora of workflows, reducing wasted time and improving satisfaction."
+		],
 		"job_timeline": "June 2023 - present",
 		"job_team_size": "1 - 10",
 		"job_role": "Software Engineer",
 		"languages": ["ruby", "rails", "typescript", "html", "css", "svelte", "react"],
-		"resource": ""
+		"resource": "igniter"
 	},
 	"highmark": {
 		"job_title": "Highmark Interactive",
-		"job_description": "Highmark Interactive is...",
+		"job_description": "Highmark Interactive is a telehealth company that provides a 'brain function assessment platform' that is used for patient monitoring.",
+		"job_tasks": [
+			"Communicate with cross-discipline teams to design and implement an automated development pipeline.",
+			"Write various scripts to improve various processes within the company."
+		],
 		"job_timeline": "Nov 2022 - Apr 2023",
 		"job_team_size": "1 - 10",
 		"job_role": "DevOps Specialist",
 		"languages": ["php", "laravel", "aws"],
-		"resource": ""
+		"resource": "highmark"
 	},
 	"nca": {
 		"job_title": "National Center for Audiology",
-		"job_description": "National Center for Audiology is...",
+		"job_description": "National Center for Audiology is a group of researches, apart of Western University. They seek to 'understand the hearing system and its disorders, optimize hearing assessment, provide beneficial hearing technologies, support evidence-based, person-centred, and family-centred practices, and develop models and simulations for professional education and practice.'",
+		"job_tasks": [
+			"Developed a new project to allow for monitored hearing aid calibration over the web.",
+			"Designed and set up a highly available and fault-tolerant Kubernetes cluster on 4 local computers to serve as a deployment for this project and future projects."
+		],
 		"job_timeline": "May 2022 – Sept 2022",
 		"job_team_size": "1 - 10",
 		"job_role": "Junior Software engineer",
 		"languages": ["rust", "typescript", "vue", "html", "css", "tailwindcss"],
 		"resource": "nca"
 	},
-	"tooke": {
+	"construction": {
 		"job_title": "Tooke Contruction",
 		"job_description": "General Laborer",
-		"job_timeline": "2023 - present",
+		"job_timeline": "Summer 2020 - 2022",
+		"job_description": "Tooke Construction Services provide general contracting/engineering services for city and/or residential projects.",
+		"job_tasks": [
+			"Operate heavy machinery in a safe and effective manner (excavation, dozing, etc..).",
+			"General physical labour including moving materials, digging, grading, cleanup."
+		],
 		"job_team_size": "1 - 10",
 		"job_role": "software engineer",
 		"languages": [],
-		"resource": ""
+		"resource": "construction"
+	},
+	"superstore": {
+		"job_title": "Superstore",
+		"job_timeline": "",
+		"job_description": "Superstore is a retail grocery store.",
+		"job_tasks": [
+			"Prepping bread, assisting customers, writing on cakes, cleaning and restocking."
+		],
+		"job_team_size": "1 - 10",
+		"job_role": "Part Time Bakery Clerk",
+		"languages": [],
+		"resource": "superstore"
+	},
+	"dairy_queen": {
+		"job_title": "Dairy Queen",
+		"job_timeline": "",
+		"job_description": "Dairy Queen is an international fast food chain known for their Blizzards (blended ice cream).",
+		"job_tasks": [
+			"Worked in all facets including: Front of house (taking orders, cash register, serving customers), drive through (taking orders, making Blizzards and other confectionary treats), and back of house (prepping food, restocking ingredients, cleaning)."
+		],
+		"job_team_size": "1 - 10",
+		"job_role": "Part Time Employee",
+		"languages": [],
+		"resource": "dairy_queen"
 	},
 	"imgit": {
 		"project_title": "Imgit",
@@ -68,7 +112,7 @@
 		"project_timeline": "2023 - present",
 		"project_team_size": "1 - 10",
 		"project_role": "software engineer",
-		"languages": ["python"],
+		"languages": ["python", "tailwindcss", "rails", "ruby"],
 		"resource": ""
 	},
 	"nvim_gol": {
