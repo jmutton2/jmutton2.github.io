@@ -1,5 +1,6 @@
 <script lang="ts">
   import temp from '$lib/images/temp.png';
+  import languages from '$lib/data/language_urls.json';
 
   import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
   export let next_page: string = '';
@@ -20,7 +21,7 @@
       <AnimatedPreview
         delay_offset={9}
         classes="justify-around w-full"
-        inner_classes="flex justify-between"
+        inner_classes="flex justify-between flex-col sm:flex-row gap-8 "
       >
         <div>
           <p class="mt-4 text-black-200 mx-auto">Timeline</p>
@@ -30,7 +31,7 @@
         </div>
         <div>
           <p class="mt-4 text-black-200 mx-auto">Team Size</p>
-          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
+          <p class="mt-4 text-black-200 mx-auto text-xl bolded text-nowrap">
             {work.job_team_size}
           </p>
           <p></p>
@@ -73,7 +74,7 @@
       <AnimatedPreview delay_offset={11}>
         {#if work.resource != ''}
           {#await import(`$lib/images/${work.resource}/demo.png`) then { default: src }}
-            <img class="w-full" {src} />
+            <img class="w-full" {src} alt={`${work.resource} logo`} />
           {/await}
         {:else}
           <img class="w-full" src={temp} alt="Temp" />
@@ -86,7 +87,9 @@
         <div class="flex gap-8 justify-between">
           {#each work.languages as language}
             {#await import(`$lib/images/${language}.png`) then { default: src }}
-              <img class="max-w-16 max-h-16" {src} alt={language} />
+              <a class="small-tile" href={languages[language] || ''}>
+                <img class="max-w-16 max-h-16" {src} alt={language} />
+              </a>
             {/await}
           {/each}
         </div>
@@ -131,6 +134,12 @@
     cursor: pointer;
   }
 
+  .small-tile {
+    border-radius: 64px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+  }
+
   .big-tile {
     width: 100%;
     height: 20rem;
@@ -147,6 +156,11 @@
   }
 
   .tile:hover {
+    filter: saturate(1.2);
+    transform: translate3d(0, -3px, 0);
+  }
+
+  .small-tile:hover {
     filter: saturate(1.2);
     transform: translate3d(0, -3px, 0);
   }

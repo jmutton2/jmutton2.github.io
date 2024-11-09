@@ -35,7 +35,9 @@
 
   <section class="pb-28 px-5">
     <AnimatedPreview delay_offset={11}>
-      <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
+      <div
+        class="sm:grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16"
+      >
         <a class="left tile" href="/work/igniter">
           <div class="text-right flex flex-col">
             <span>Igniter Tickets</span>
@@ -129,6 +131,19 @@
         </div>
       </a>
     </AnimatedPreview>
+
+    <AnimatedPreview delay_offset={14}>
+      <section class="py-14 px-5">
+        <h2 class="font-extrabold text-5xl leading-[4.5rem]">Contact</h2>
+
+        <a
+          class="big-tile"
+          href="mailto:jmutton2@example.com?subject=Hello%20Jacob"
+        >
+          <h2 class="text-4xl">Email jmutton2@uwo.ca</h2>
+        </a>
+      </section>
+    </AnimatedPreview>
   </section>
 </div>
 
@@ -188,5 +203,26 @@
   .expanding-grid-right:has(.right:hover) {
     --left: 1fr;
     --right: 2fr;
+  }
+
+  .big-tile {
+    width: 100%;
+    height: 20rem;
+    border-radius: 64px;
+    padding: 84px 128px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    height: 100%;
+    overflow: hidden;
+    filter: saturate(0);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+  }
+
+  .big-tile:hover {
+    box-shadow: 0 0 0 3px #242424;
+    filter: saturate(1.2);
+    transform: translate3d(0, -3px, 0);
   }
 </style>

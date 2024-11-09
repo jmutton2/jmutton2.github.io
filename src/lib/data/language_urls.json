@@ -1,0 +1,19 @@
+{
+	"aws": "https://aws.amazon.com/",
+	"c": "https://en.wikipedia.org/wiki/C_(programming_language)",
+	"css": "https://en.wikipedia.org/wiki/CSS",
+	"go": "https://go.dev/",
+	"html": "https://en.wikipedia.org/wiki/HTML",
+	"laravel": "https://laravel.com",
+	"lua": "https://www.lua.org/",
+	"php": "https://www.php.net/",
+	"python": "https://www.python.org/",
+	"rails": "https://guides.rubyonrails.org/getting_started.html",
+	"react": "https://react.dev/",
+	"ruby": "https://www.ruby-lang.org/en/",
+	"rust": "https://www.rust-lang.org",
+	"svelte": "https://svelte.dev/",
+	"tailwindcss": "https://tailwindcss.com/",
+	"typescript": "https://www.typescriptlang.org/",
+	"vue": "https://vuejs.org/"
+}
