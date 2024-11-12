@@ -38,6 +38,7 @@
   "dependencies": {
     "axios": "^1.7.2",
     "svelte-ace": "^1.0.21",
+    "svelte-carousel": "^1.0.25",
     "svelte-inview": "^4.0.2"
   }
 }

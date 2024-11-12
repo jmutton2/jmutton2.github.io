@@ -16,34 +16,6 @@
       </AnimatedPreview>
     </section>
 
-    <section class="py-28 px-5 w-4/5 mx-auto">
-      <AnimatedPreview
-        delay_offset={9}
-        classes="justify-around w-full"
-        inner_classes="flex justify-between"
-      >
-        <div>
-          <p class="mt-4 text-black-200 mx-auto">Timeline</p>
-          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
-            {project.project_timeline}
-          </p>
-        </div>
-        <div>
-          <p class="mt-4 text-black-200 mx-auto">Team Size</p>
-          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
-            {project.project_team_size}
-          </p>
-          <p></p>
-        </div>
-        <div>
-          <p class="mt-4 text-black-200 mx-auto">Role</p>
-          <p class="mt-4 text-black-200 mx-auto text-xl bolded">
-            {project.project_role}
-          </p>
-        </div>
-      </AnimatedPreview>
-    </section>
-
     <section class="py-28 px-5">
       <AnimatedPreview delay_offset={9}>
         <h1 class="font-extrabold text-kxl leading-[4.5rem]">Overview</h1>

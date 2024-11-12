@@ -1,10 +1,20 @@
 <script lang="ts">
   import temp from '$lib/images/temp.png';
   import languages from '$lib/data/language_urls.json';
+  import Carousel from 'svelte-carousel';
 
   import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
   export let next_page: string = '';
   export let works = [];
+
+  const allImages = import.meta.glob('$lib/images/**/*.png', { eager: true });
+
+  // Function to filter images by work.resource
+  function getImagesForWork(resource: string) {
+    return Object.entries(allImages)
+      .filter(([path]) => path.includes(`/${resource}/`)) // Match by folder
+      .map(([, img]) => img.default);
+  }
 </script>
 
 <div class="content">
@@ -71,15 +81,11 @@
     </section>
 
     <section class="py-28 px-5">
-      <AnimatedPreview delay_offset={11}>
-        {#if work.resource != ''}
-          {#await import(`$lib/images/${work.resource}/demo.png`) then { default: src }}
-            <img class="w-full" {src} alt={`${work.resource} logo`} />
-          {/await}
-        {:else}
-          <img class="w-full" src={temp} alt="Temp" />
-        {/if}
-      </AnimatedPreview>
+      <Carousel>
+        {#each getImagesForWork(work.resource) as src}
+          <img class="w-full" {src} alt={`${work.resource} image`} />
+        {/each}
+      </Carousel>
     </section>
 
     <section class="py-14 px-5">

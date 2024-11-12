@@ -81,55 +81,31 @@
 	},
 	"imgit": {
 		"project_title": "Imgit",
-		"project_description": "General Laborer",
-		"project_timeline": "2023 - present",
-		"project_team_size": "1 - 10",
-		"project_role": "software engineer",
+		"project_description": "Image-git a tool that derived from a specific need - to monitor a large set of websites, and their changes over time. By using Selenium's ability to screen capture websites, Image-git can capture, record, and display the changes of a webpage over time. This tool is extremely powerful, and gives more monitoring power to both development and operations.",
 		"languages": ["python", "svelte", "html", "css", "tailwindcss", "sqlite"],
-		"resource": ""
-	},
-	"glov": {
-		"project_title": "Glov",
-		"project_description": "General Laborer",
-		"project_timeline": "2023 - present",
-		"project_team_size": "1 - 10",
-		"project_role": "software engineer",
-		"languages": [],
 		"resource": ""
 	},
 	"pisec": {
 		"project_title": "PiSec",
-		"project_description": "General Laborer",
-		"project_timeline": "2023 - present",
-		"project_team_size": "1 - 10",
-		"project_role": "software engineer",
+		"project_description": "PiSec is a modular home security system that strives to be cheap and modular. Using Raspberry Pi as the primary 'hub' and many ESP32 modules, a netork of security modules can be seamlessly joined to provide a veriety of security measures.",
 		"languages": ["c"],
 		"resource": ""
 	},
 	"anidex": {
 		"project_title": "Anidex",
-		"project_description": "General Laborer",
-		"project_timeline": "2023 - present",
-		"project_team_size": "1 - 10",
-		"project_role": "software engineer",
+		"project_description": "Anidex is a project that I've always wanted. Something akin to the Pokedex from Pokemon. With Anidex, any animal can be scanned with your phone - and now, with the power of machine learning, that animal can be identified and recoreded. Anidex provides a set of useful information regarding any scanned animal, along with some more playful statistics - similar to Pokemon, like it's type!",
 		"languages": ["python", "tailwindcss", "rails", "ruby"],
 		"resource": ""
 	},
 	"nvim_gol": {
 		"project_title": "Nvim Game of Life",
-		"project_description": "General Laborer",
-		"project_timeline": "2023 - present",
-		"project_team_size": "1 - 10",
-		"project_role": "software engineer",
+		"project_description": "Based on Conway's Game of Life, this was an experiment to render the Game of Life in a text editor, with data sent via a server.",
 		"languages": ["go", "lua"],
 		"resource": "nvim_gol"
 	},
 	"scribe": {
 		"project_title": "Scribe",
-		"project_description": "General Laborer",
-		"project_timeline": "2023 - present",
-		"project_team_size": "1 - 10",
-		"project_role": "software engineer",
+		"project_description": "With a constant need to jot notes down quickly, I developed an plugin called Scribe, that allows a user to quickly jot down notes in one place - removing any need for extra file management.",
 		"languages": ["lua"],
 		"resource": "scribe"
 	}

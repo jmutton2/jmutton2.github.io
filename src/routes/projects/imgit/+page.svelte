@@ -3,6 +3,6 @@
   import ProjectPage from '$lib/components/projectPage.svelte';
 </script>
 
-<ProjectPage next_page="/projects/glov" projects={[data.imgit]}>
-  <span slot="next_page">Glov</span>
+<ProjectPage next_page="/" projects={[data.imgit]}>
+  <span slot="next_page">Home</span>
 </ProjectPage>

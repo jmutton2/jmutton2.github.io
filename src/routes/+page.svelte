@@ -2,8 +2,6 @@
   import temp from '$lib/images/temp.png';
 
   import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
-
-  import Ticket from '$lib/images/ticket.svg.svelte';
 </script>
 
 <div class="content">
@@ -35,9 +33,7 @@
 
   <section class="pb-28 px-5">
     <AnimatedPreview delay_offset={11}>
-      <div
-        class="sm:grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16"
-      >
+      <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
         <a class="left tile" href="/work/igniter">
           <div class="text-right flex flex-col">
             <span>Igniter Tickets</span>
@@ -97,18 +93,17 @@
     </AnimatedPreview>
 
     <AnimatedPreview delay_offset={13}>
-      <div class="grid grid-cols-[1fr_2fr] grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile" href="/projects/anidex">
+      <div class="grid expanding-grid-left grid-rows-[1fr] gap-x-[50px] mb-16">
+        <a class="tile left" href="/projects/anidex">
           <div class="text-right flex flex-col">
             <span class="text-xl">Anidex</span>
-            <span>I love pokemon, and I wanted the pokedex in real life...</span
-            >
+            <span>Scan and identify any animal using machine learning.</span>
           </div>
           <div class="mt-11">
             <img src={temp} alt="temp" />
           </div>
         </a>
-        <a class="tile" href="/projects/pi-sec">
+        <a class="tile right" href="/projects/pi-sec">
           <div class="text-right flex flex-col">
             <span class="text-xl">Pi-Sec</span>
             <span>A modular home security system.</span>
@@ -119,17 +114,33 @@
         </a>
       </div>
 
-      <a class="tile" href="/projects/neovim">
-        <div class="text-right flex flex-col">
-          <span class="text-xl">Neovim</span>
-          <span
-            >A collection of plugins and small programs with a focus on Neovim.</span
-          >
-        </div>
-        <div class="mt-11">
-          <img src={temp} alt="temp" />
-        </div>
-      </a>
+      <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
+        <a class="tile left" href="/projects/neovim">
+          <div class="text-left flex flex-col">
+            <span class="text-xl">Neovim</span>
+            <span
+              >A collection of plugins and small programs with a focus on
+              Neovim.</span
+            >
+          </div>
+          <div class="mt-11">
+            {#await import(`$lib/images/neovim/demo.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Neovim Projects" />
+            {/await}
+          </div>
+        </a>
+        <a class="tile right" href="/projects/imgit">
+          <div class="text-right flex flex-col">
+            <span class="text-xl">Image-git</span>
+            <span>A tool for tracking your websites, visually!</span>
+          </div>
+          <div class="mt-11">
+            {#await import(`$lib/images/imgit/preview.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Neovim Projects" />
+            {/await}
+          </div>
+        </a>
+      </div>
     </AnimatedPreview>
 
     <AnimatedPreview delay_offset={14}>
@@ -166,13 +177,11 @@
     max-height: 500px;
     height: 100%;
     overflow: hidden;
-    filter: saturate(0);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
   }
 
   .tile:hover {
-    filter: saturate(1.2);
     transform: translate3d(0, -3px, 0);
   }
 
@@ -215,14 +224,12 @@
     max-height: 500px;
     height: 100%;
     overflow: hidden;
-    filter: saturate(0);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
   }
 
   .big-tile:hover {
     box-shadow: 0 0 0 3px #242424;
-    filter: saturate(1.2);
     transform: translate3d(0, -3px, 0);
   }
 </style>
