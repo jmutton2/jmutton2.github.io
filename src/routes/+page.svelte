@@ -1,6 +1,4 @@
 <script>
-import temp from '$lib/images/temp.png';
-
 import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
 
 </script>

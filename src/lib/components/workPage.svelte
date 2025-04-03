@@ -1,7 +1,6 @@
 <script lang="ts">
   import temp from '$lib/images/temp.png';
   import languages from '$lib/data/language_urls.json';
-  import Carousel from 'svelte-carousel';
 
   import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
   export let next_page: string = '';
@@ -81,11 +80,9 @@
     </section>
 
     <section class="py-28 px-5">
-      <Carousel>
-        {#each getImagesForWork(work.resource) as src}
-          <img class="w-full" {src} alt={`${work.resource} image`} />
-        {/each}
-      </Carousel>
+      {#each getImagesForWork(work.resource) as src}
+        <img class="w-full" {src} alt={`${work.resource} image`} />
+      {/each}
     </section>
 
     <section class="py-14 px-5">
