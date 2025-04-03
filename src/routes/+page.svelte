@@ -1,12 +1,31 @@
 <script>
-  import temp from '$lib/images/temp.png';
+import temp from '$lib/images/temp.png';
 
-  import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
+import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
+
 </script>
 
 <div class="content">
-  <section class="pb-20 px-5">
+  <section class="pb-20 px-5 flex gap-20" style="flex-direction: row">
     <AnimatedPreview delay_offset={0}>
+      <a href="https://github.com/jmutton2" target="_blank">
+        Github
+      </a>
+    </AnimatedPreview>
+    <AnimatedPreview delay_offset={4}>
+      <a href="https://www.linkedin.com/in/jmutton2/" target="_blank">
+        LinkedIn
+      </a>
+    </AnimatedPreview>
+    <AnimatedPreview delay_offset={8}>
+      <a href="resume.pdf">
+        Resume
+      </a>
+    </AnimatedPreview>
+  </section>
+
+  <section class="pb-20 px-5">
+    <AnimatedPreview delay_offset={15}>
       <h1 class="font-extrabold text-7xl leading-[4.5rem]">
         Hi, I'm Jacob,
         <br />
@@ -16,7 +35,7 @@
   </section>
 
   <section class="w-1/2 mx-auto pb-28 px-5">
-    <AnimatedPreview delay_offset={9}>
+    <AnimatedPreview delay_offset={18}>
       <p class="mt-4 text-black-200 mx-auto">
         I am a Software Engineer with 2 years of fulltime experience. Most recently
         I have been working with Ruby on Rails and React. 
@@ -28,14 +47,14 @@
     </AnimatedPreview>
   </section>
 
-  <AnimatedPreview delay_offset={10}>
+  <AnimatedPreview delay_offset={20}>
     <section class="py-14 px-5">
       <h2 class="font-extrabold text-5xl leading-[4.5rem]">Work</h2>
     </section>
   </AnimatedPreview>
 
   <section class="pb-28 px-5">
-    <AnimatedPreview delay_offset={11}>
+    <AnimatedPreview delay_offset={22}>
       <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
         <a class="left tile" href="/work/igniter">
           <div class="text-right flex flex-col">
