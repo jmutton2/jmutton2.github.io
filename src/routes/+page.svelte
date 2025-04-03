@@ -56,7 +56,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
   <section class="pb-28 px-5">
     <AnimatedPreview delay_offset={22}>
       <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="left tile" href="/work/igniter">
+        <a class="left tile" href="{base}/work/igniter">
           <div class="text-right flex flex-col">
             <span>Igniter Tickets</span>
             <span class="text-xl">Software Engineer</span>
@@ -67,7 +67,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
             {/await}
           </div>
         </a>
-        <a class="right tile" href="/work/highmark">
+        <a class="right tile" href="{base}/work/highmark">
           <div class="text-right flex flex-col">
             <span>Highmark Interactive</span>
             <span class="text-xl">DevOps Specialist</span>
@@ -81,7 +81,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
       </div>
 
       <div class="grid expanding-grid-left grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="left tile" href="/work/nca">
+        <a class="left tile" href="{base}/work/nca">
           <div class="text-right flex flex-col">
             <span>National Center for Audiology</span>
             <span class="text-xl">Junior Software Engineer</span>
@@ -92,7 +92,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
             {/await}
           </div>
         </a>
-        <a class="right tile" href="/work/other">
+        <a class="right tile" href="{base}/work/other">
           <div class="text-right flex flex-col">
             <span>Other</span>
             <span class="text-xl"
@@ -116,7 +116,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
 
     <AnimatedPreview delay_offset={13}>
       <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile left" href="/projects/lily">
+        <a class="tile left" href="{base}/projects/lily">
           <div class="text-right flex flex-col">
             <span class="text-xl">Lily</span>
             <span>A terminal-based music player.</span>
@@ -127,7 +127,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
             {/await}
           </div>
         </a>
-        <a class="tile right" href="/projects/pi-sec">
+        <a class="tile right" href="{base}/projects/pi-sec">
           <div class="text-right flex flex-col">
             <span class="text-xl">Pi-Sec</span>
             <span>A modular home security system.</span>
@@ -141,7 +141,7 @@ import AnimatedPreview from '$lib/components/AnimatedPreview.svelte';
       </div>
 
       <div class="">
-        <a class="tile" href="/projects/neovim">
+        <a class="tile" href="{base}/projects/neovim">
           <div class="text-left flex flex-col">
             <span class="text-xl">Neovim</span>
             <span
