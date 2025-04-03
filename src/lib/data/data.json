@@ -3,7 +3,7 @@
 		"job_title": "Igniter Tickets",
 		"job_description": "Igniter tickets is white-labelled ticketing company - providing ticketing services for hundreds of clients across north america.",
 		"job_tasks": [
-			"Integrated Stripe as a payment provider to process thousands of transactions.",
+			"Integrated various payment providers including Stripe, Authorize.net, and Bambora, to process thousands of transactions across hundreds of clients.",
 			"Initiated a visual overhaul to Igniter's Core application, which provided an improved client/customer experience.",
 			"Co-Developed a new web scanner system to provide realtime ticket management.",
 			"Participate in on-call support to assist clients with urgent and critical support requests.",
@@ -79,33 +79,27 @@
 		"languages": [],
 		"resource": "dairy_queen"
 	},
-	"imgit": {
-		"project_title": "Imgit",
-		"project_description": "Image-git a tool that derived from a specific need - to monitor a large set of websites, and their changes over time. By using Selenium's ability to screen capture websites, Image-git can capture, record, and display the changes of a webpage over time. This tool is extremely powerful, and gives more monitoring power to both development and operations.",
-		"languages": ["python", "svelte", "html", "css", "tailwindcss", "sqlite"],
-		"resource": ""
-	},
 	"pisec": {
 		"project_title": "PiSec",
-		"project_description": "PiSec is a modular home security system that strives to be cheap and modular. Using Raspberry Pi as the primary 'hub' and many ESP32 modules, a netork of security modules can be seamlessly joined to provide a veriety of security measures.",
+		"project_description": "PiSec is a cost-effective and modular home security system. It leverages a Raspberry Pi as the central hub, with multiple ESP32 modules to create a flexible, scalable network of security devices, offering a wide range of protection options.",
 		"languages": ["c"],
-		"resource": ""
+		"resource": "pi-sec"
 	},
-	"anidex": {
-		"project_title": "Anidex",
-		"project_description": "Anidex is a project that I've always wanted. Something akin to the Pokedex from Pokemon. With Anidex, any animal can be scanned with your phone - and now, with the power of machine learning, that animal can be identified and recoreded. Anidex provides a set of useful information regarding any scanned animal, along with some more playful statistics - similar to Pokemon, like it's type!",
-		"languages": ["python", "tailwindcss", "rails", "ruby"],
-		"resource": ""
+	"lily": {
+		"project_title": "Lily",
+		"project_description": "Lily is a music player I built while learning Rust. The project deepened my understanding of PulseAudio, audio decoding, and Rust programming. I also designed a terminal-based UI, a new challenge that expanded my development skills.",
+		"languages": ["rust"],
+		"resource": "lily"
 	},
 	"nvim_gol": {
 		"project_title": "Nvim Game of Life",
-		"project_description": "Based on Conway's Game of Life, this was an experiment to render the Game of Life in a text editor, with data sent via a server.",
+		"project_description": "Inspired by Conway's Game of Life, this project integrates the classic cellular automaton into a text editor, with real-time data transmitted through a server, offering a unique way to visualize the game.",
 		"languages": ["go", "lua"],
 		"resource": "nvim_gol"
 	},
 	"scribe": {
 		"project_title": "Scribe",
-		"project_description": "With a constant need to jot notes down quickly, I developed an plugin called Scribe, that allows a user to quickly jot down notes in one place - removing any need for extra file management.",
+		"project_description": "Scribe is a simple, efficient note-taking plugin I created to quickly capture thoughts and ideas without the hassle of managing separate files. It streamlines the note-taking process, letting users focus on writing.",
 		"languages": ["lua"],
 		"resource": "scribe"
 	}

@@ -3,6 +3,6 @@
   import ProjectPage from '$lib/components/projectPage.svelte';
 </script>
 
-<ProjectPage next_page="/projects/scribe" projects={[data.pisec]}>
-  <span slot="next_page">Anidex</span>
+<ProjectPage next_page="/projects/neovim" projects={[data.pisec]}>
+  <span slot="next_page">Neovim</span>
 </ProjectPage>

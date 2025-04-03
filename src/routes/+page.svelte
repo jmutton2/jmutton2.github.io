@@ -18,9 +18,12 @@
   <section class="w-1/2 mx-auto pb-28 px-5">
     <AnimatedPreview delay_offset={9}>
       <p class="mt-4 text-black-200 mx-auto">
-        I am a Software Engineer who graduated in 2023, and am now working full
-        time in my field. I take pride in my work and strive to become a well
-        rounded and competent engineer.
+        I am a Software Engineer with 2 years of fulltime experience. Most recently
+        I have been working with Ruby on Rails and React. 
+        <br/>
+        <br/>
+        In my spare time I participate in boxing, learn new programming languages,
+        and play board games!
       </p>
     </AnimatedPreview>
   </section>
@@ -93,14 +96,16 @@
     </AnimatedPreview>
 
     <AnimatedPreview delay_offset={13}>
-      <div class="grid expanding-grid-left grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile left" href="/projects/anidex">
+      <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
+        <a class="tile left" href="/projects/lily">
           <div class="text-right flex flex-col">
-            <span class="text-xl">Anidex</span>
-            <span>Scan and identify any animal using machine learning.</span>
+            <span class="text-xl">Lily</span>
+            <span>A terminal-based music player.</span>
           </div>
           <div class="mt-11">
-            <img src={temp} alt="temp" />
+            {#await import(`$lib/images/lily/showcase.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Lily Music Player" />
+            {/await}
           </div>
         </a>
         <a class="tile right" href="/projects/pi-sec">
@@ -109,34 +114,25 @@
             <span>A modular home security system.</span>
           </div>
           <div class="mt-11">
-            <img src={temp} alt="temp" />
+            {#await import(`$lib/images/pi-sec/demo.png`) then { default: src }}
+              <img class="max-w-5xl" {src} alt="Pi Sec" />
+            {/await}
           </div>
         </a>
       </div>
 
-      <div class="grid expanding-grid-right grid-rows-[1fr] gap-x-[50px] mb-16">
-        <a class="tile left" href="/projects/neovim">
+      <div class="">
+        <a class="tile" href="/projects/neovim">
           <div class="text-left flex flex-col">
             <span class="text-xl">Neovim</span>
             <span
-              >A collection of plugins and small programs with a focus on
+              >A collection of plugins and small programs with a focus on exporing
               Neovim.</span
             >
           </div>
           <div class="mt-11">
             {#await import(`$lib/images/neovim/demo.png`) then { default: src }}
-              <img class="max-w-5xl" {src} alt="Neovim Projects" />
-            {/await}
-          </div>
-        </a>
-        <a class="tile right" href="/projects/imgit">
-          <div class="text-right flex flex-col">
-            <span class="text-xl">Image-git</span>
-            <span>A tool for tracking your websites, visually!</span>
-          </div>
-          <div class="mt-11">
-            {#await import(`$lib/images/imgit/preview.png`) then { default: src }}
-              <img class="max-w-5xl" {src} alt="Neovim Projects" />
+              <img class="" {src} alt="Neovim Projects" />
             {/await}
           </div>
         </a>

@@ -4,8 +4,8 @@
 </script>
 
 <WorkPage
-  next_page="/projects/anidex"
+  next_page="/projects/lily"
   works={[data.construction, data.superstore, data.dairy_queen]}
 >
-  <span slot="next_page">Anidex</span>
+  <span slot="next_page">Lily</span>
 </WorkPage>
