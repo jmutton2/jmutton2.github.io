@@ -36,6 +36,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-static": "^3.0.8",
     "axios": "^1.7.2",
     "svelte-ace": "^1.0.21",
     "svelte-carousel": "^1.0.25",
